@@ -1,20 +1,20 @@
 class ThunderDaw < Formula
   desc "A small FL Studio-style DAW in Rust"
   homepage "https://canureal.github.io/thunder-daw/"
-  version "0.2.5"
+  version "0.2.6"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/canureal/thunder-daw/releases/download/v0.2.5/thunder-daw-aarch64-apple-darwin.tar.xz"
-      sha256 "15df3d7d4b017238a0b5c82bafa55b5b780d5e7d739918e2ad9619f11a720a07"
+      url "https://github.com/canureal/thunder-daw/releases/download/v0.2.6/thunder-daw-aarch64-apple-darwin.tar.xz"
+      sha256 "b8ea660ccb7c2d8317e77bdc606580b05715ce26e79a319a06ab12af7dd33342"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/canureal/thunder-daw/releases/download/v0.2.5/thunder-daw-x86_64-apple-darwin.tar.xz"
-      sha256 "fc2994c9bd6820a173a67b7b4e5b8504a6c36888e0088ceb1f100c84420b876e"
+      url "https://github.com/canureal/thunder-daw/releases/download/v0.2.6/thunder-daw-x86_64-apple-darwin.tar.xz"
+      sha256 "7e5652c4eb37f50099b1197b62c1c8822a3c934b461225d6425a3ba5136332a5"
     end
   end
   if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/canureal/thunder-daw/releases/download/v0.2.5/thunder-daw-x86_64-unknown-linux-gnu.tar.xz"
-    sha256 "123f7bc8f440c256f65bcbd470492a90f5a3c2d210f5e5469c45577094afd093"
+    url "https://github.com/canureal/thunder-daw/releases/download/v0.2.6/thunder-daw-x86_64-unknown-linux-gnu.tar.xz"
+    sha256 "e76fba37a7e42c16abee4bb6df3edae41ef871f90c47ba137058ce4ed9b73745"
   end
   license "MIT"
 
