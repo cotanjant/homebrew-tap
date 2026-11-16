@@ -1,20 +1,20 @@
 class Thunder < Formula
   desc "A small FL Studio-style DAW in Rust"
   homepage "https://cotanjant.github.io/thunder/"
-  version "1.0.0"
+  version "1.0.1"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/cotanjant/thunder/releases/download/v1.0.0/thunder-aarch64-apple-darwin.tar.xz"
-      sha256 "4d8a962f860729011881009ec97069569e5ce050ae360674a8e59b08b8026a2b"
+      url "https://github.com/cotanjant/thunder/releases/download/v1.0.1/thunder-aarch64-apple-darwin.tar.xz"
+      sha256 "a80a691a90319c7417c0e871d0a731e75dbe8488c29bb4e90c163b9305631d32"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/cotanjant/thunder/releases/download/v1.0.0/thunder-x86_64-apple-darwin.tar.xz"
-      sha256 "444f559883ca7d29f8064a3358514ccf3a862f4675adba14267366bd8ca9726f"
+      url "https://github.com/cotanjant/thunder/releases/download/v1.0.1/thunder-x86_64-apple-darwin.tar.xz"
+      sha256 "2c4027d6970ed4b37d673986ddce593492802a317126d25849d4141bc291c81a"
     end
   end
   if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/cotanjant/thunder/releases/download/v1.0.0/thunder-x86_64-unknown-linux-gnu.tar.xz"
-    sha256 "13f012093f971a19ad6bde0ab7258b738e0b0a8e068657ae6c89797aca50571d"
+    url "https://github.com/cotanjant/thunder/releases/download/v1.0.1/thunder-x86_64-unknown-linux-gnu.tar.xz"
+    sha256 "ea853ea241692f0adb534eb20f7b1f964893c8329b2e749c3c4daa854dcd8427"
   end
   license "MIT"
 
